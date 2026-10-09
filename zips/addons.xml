@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="0.3.16" provider-name="Active Area Subtitles">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Keeps subtitles inside the picture instead of the black bars</summary>
+        <description lang="en_GB">Shows text subtitles just inside the picture of widescreen films instead of in the black bars. The picture is measured once at the start of playback, then the add-on stays out of the way, and your own subtitle settings are restored when playback ends. Image-based subtitles (such as PGS) cannot be moved.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.activeareasubtitles" name="Active Area Subtitles Repository" version="1.0.0" provider-name="Active Area Subtitles">
+    <extension point="xbmc.addon.repository" name="Active Area Subtitles Repository">
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/zips/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Updates for Active Area Subtitles</summary>
+        <description lang="en_GB">Install this once. Kodi then keeps Active Area Subtitles up to date by itself.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>

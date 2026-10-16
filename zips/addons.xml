@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="1.4.1" provider-name="Active Area Subtitles">
+<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="1.5.0" provider-name="Active Area Subtitles">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>

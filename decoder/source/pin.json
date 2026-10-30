@@ -1,0 +1,21 @@
+{
+    "ffmpeg": {
+        "version": "7.1.5",
+        "url": "https://ffmpeg.org/releases/ffmpeg-7.1.5.tar.xz",
+        "sha256": "de668509caf9e35e3cd162473441fdb29538c6d96ed080292b3cf9e6fc5d558f",
+        "signed_by": "FCF986EA15E6E293A5644F10B4322F04D67658D8",
+        "avformat_major": 61
+    },
+    "zig": {
+        "version": "0.13.0",
+        "url": "https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz",
+        "sha256": "d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea"
+    },
+    "base_image": "debian:bullseye-slim",
+    "released": [
+        "windows-x86_64",
+        "osx-arm64",
+        "osx-x86_64",
+        "linux-x86_64"
+    ]
+}

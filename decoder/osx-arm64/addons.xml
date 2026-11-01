@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="1.6.0" provider-name="Active Area Subtitles">
+<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="1.6.2" provider-name="Active Area Subtitles">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Keeps subtitles inside the picture instead of the black bars</summary>
-        <description lang="en_GB">Shows text subtitles just inside the picture of widescreen content instead of in the black bars. The picture is measured at the start of playback, and your own subtitle settings are restored when playback ends. On CoreELEC, text subtitles follow Dolby Vision films whose picture changes shape between scenes (IMAX), and image subtitles (such as PGS) are kept inside the picture where CoreELEC can place them.</description>
+        <description lang="en_GB">Keeps text subtitles inside the picture of widescreen films instead of in the black bars, and moves them with the picture in films that switch between widescreen and IMAX scenes (on CoreELEC, Dolby Vision films on builds that report their scene shapes). Your own subtitle settings are restored when playback ends. On CoreELEC, image subtitles (such as PGS) are kept inside the picture where CoreELEC can place them.</description>
         <platform>osx-arm64</platform>
         <assets>
             <icon>resources/icon.png</icon>

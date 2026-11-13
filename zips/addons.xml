@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.activeareasubtitles" name="Active Area Subtitles" version="1.8.1" provider-name="Active Area Subtitles">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Keeps subtitles inside the picture instead of the black bars</summary>
+        <description lang="en_GB">Keeps text subtitles inside the picture of widescreen films instead of in the black bars, and moves them with the picture in films that switch between widescreen and IMAX scenes (on CoreELEC, Dolby Vision films on builds that report their scene shapes). Your own subtitle settings are restored when playback ends. On CoreELEC, image subtitles (such as PGS) are kept inside the picture where CoreELEC can place them.</description>
+        <platform>android freebsd linux windows-i686 windowsstore ios-aarch64 tvos-aarch64</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.activeareasubtitles" name="Active Area Subtitles Repository" version="1.1.0" provider-name="Active Area Subtitles">
+    <extension point="xbmc.addon.repository" name="Active Area Subtitles Repository">
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/zips/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/zips/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/windows-x86_64/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/decoder/windows-x86_64/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/windows-x86_64/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-arm64/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-arm64/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-arm64/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-x86_64/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-x86_64/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/osx-x86_64/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/linux-x86_64/addons.xml</info>
+            <checksum>https://berserker-git.github.io/active-area-subtitles-kodi/decoder/linux-x86_64/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/active-area-subtitles-kodi/decoder/linux-x86_64/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Updates for Active Area Subtitles</summary>
+        <description lang="en_GB">Install this once. Kodi then keeps Active Area Subtitles up to date by itself.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
